@@ -10,4 +10,9 @@ describe('<Quiz />', () => {
         cy.get('button').should('have.text', 'Start Quiz')
     });
 
+    it('starts the quiz and shows the first question', () => {
+        cy.mount(<Quiz />)
+        cy.contains('Start Quiz').click()
+        cy.get('h2').invoke('text').should('match', /\?/)
+    });
 });
