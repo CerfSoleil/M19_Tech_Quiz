@@ -21,6 +21,7 @@
   "license": "ISC",
   "devDependencies": {
     "@testing-library/react": "^16.2.0",
+    "@testing-library/cypress": "^10.0.2",
     "@types/jest": "^29.5.14",
     "@types/pretty": "^2.0.3",
     "@types/react": "^18.3.3",
